@@ -1369,3 +1369,35 @@ footer .copyright p {
   color: #ddd;
   font-weight: 500;
 }
+.light-box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+  transition: all .3s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  z-index: 10000 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+}
+
+.light-box_open{
+  transform: scale(1);
+}
+
+.light-box_close{
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
